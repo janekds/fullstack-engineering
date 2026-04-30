@@ -92,6 +92,12 @@ export default function Header() {
               Why Us
             </button>
             <button
+              onClick={() => scrollTo("careers")}
+              className="text-white/90 text-sm font-medium hover:text-white transition-colors"
+            >
+              Careers
+            </button>
+            <button
               onClick={() => scrollTo("faq")}
               className="text-white/90 text-sm font-medium hover:text-white transition-colors"
             >
@@ -181,6 +187,15 @@ export default function Header() {
                         }}
                       >
                         Why Us
+                      </button>
+                      <button
+                        className="block w-full text-left text-white/90 text-base font-medium hover:text-white transition-colors py-3 border-b border-gray-800/30"
+                        onClick={() => {
+                          handleMobileLinkClick();
+                          scrollTo("careers");
+                        }}
+                      >
+                        Careers
                       </button>
                       <button
                         className="block w-full text-left text-white/90 text-base font-medium hover:text-white transition-colors py-3 border-b border-gray-800/30"

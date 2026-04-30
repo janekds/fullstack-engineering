@@ -20,6 +20,9 @@ import {
   Users,
   ArrowRight,
   CheckCircle2,
+  Briefcase,
+  Upload,
+  Mail,
   Rocket,
   FileText,
   Wrench,
@@ -606,6 +609,71 @@ export default function Home() {
               );
             })}
           </div>
+        </div>
+      </motion.section>
+
+      {/* Careers Section */}
+      <motion.section
+        id="careers"
+        className="py-24 px-4 sm:px-6 lg:px-8 bg-black relative overflow-hidden"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="absolute top-20 left-20 w-[400px] h-[400px] bg-[#74ce00] opacity-5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-[300px] h-[300px] bg-[#74ce00] opacity-5 rounded-full blur-3xl"></div>
+
+        <div className="max-w-4xl mx-auto relative z-10">
+          <motion.div
+            className="text-center"
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="w-16 h-16 bg-gradient-to-br from-[#74ce00]/20 to-[#8FFF00]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-[#74ce00]/30">
+              <Briefcase className="w-8 h-8 text-[#8FFF00]" />
+            </div>
+            <h2 className="text-3xl sm:text-5xl font-bold text-white mb-6">
+              Join our engineering team
+            </h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-4">
+              We&apos;re hiring mechanical, electrical, and software engineers
+              based in Sri Lanka. Work on exciting projects for startups around
+              the world.
+            </p>
+            <p className="text-gray-400 mb-10 max-w-xl mx-auto">
+              Send your resume and a brief introduction to us. Attach your CV/resume
+              directly to the email — we review every application.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href={`mailto:engineering@full-stack-engineering.com?subject=${encodeURIComponent("Job Application — [Your Name] — [Role: Mechanical / Electrical / Software]")}&body=${encodeURIComponent("Hi Fullstack Engineering,\n\nI'm interested in joining your team. Please find my resume attached.\n\nName: \nRole I'm applying for (Mechanical / Electrical / Software): \nYears of experience: \nBrief introduction: \n\n\nBest regards,\n")}`}
+              >
+                <Button
+                  variant="green"
+                  size="lg"
+                  className="text-base px-8 py-4 h-auto"
+                >
+                  <Upload className="w-5 h-5 mr-2" />
+                  Send Your Resume
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </a>
+            </div>
+
+            <p className="text-sm text-gray-500 mt-6">
+              Email us at{" "}
+              <a
+                href="mailto:engineering@full-stack-engineering.com"
+                className="text-[#8FFF00] font-semibold hover:underline"
+              >
+                engineering@full-stack-engineering.com
+              </a>
+            </p>
+          </motion.div>
         </div>
       </motion.section>
 

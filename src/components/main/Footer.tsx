@@ -96,6 +96,14 @@ export default function Footer() {
                       Get a Quote
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/#careers"
+                      className="text-gray-600 hover:text-gray-900 text-sm transition-colors block py-1"
+                    >
+                      Careers
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -111,7 +119,7 @@ export default function Footer() {
                   Get a Free Quote
                 </Button>
               </Link>
-              <a href="mailto:hello@fullstackengineering.co" className="block">
+              <a href="mailto:engineering@full-stack-engineering.com" className="block">
                 <Button
                   variant="white-3d"
                   className="w-full sm:w-auto lg:w-auto min-h-[44px] px-6 py-3 text-sm sm:text-base font-semibold rounded-2xl touch-manipulation"
