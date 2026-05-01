@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fullstackengineering.co"),
+  metadataBase: new URL("https://full-stack-engineering.com"),
   title: {
     default: "Fullstack Engineering — Mechanical, Electrical & Software Design",
     template: "%s | Fullstack Engineering",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Offshore mechanical, electrical, and software design. Production-ready engineering with fast turnaround at a fraction of the cost.",
     type: "website",
     locale: "en_US",
-    url: "https://fullstackengineering.co",
+    url: "https://full-stack-engineering.com",
     siteName: "Fullstack Engineering",
   },
   twitter: {
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://fullstackengineering.co",
+    canonical: "https://full-stack-engineering.com",
   },
   category: "Technology",
 };
